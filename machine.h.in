@@ -14,22 +14,121 @@
 #ifndef _MACHINE_H
 #define _MACHINE_H 1
 
+/* char '\0' is same as float zeros */
+#undef CHAR0ISDBL0
+
+/* incorporate complex functions */
+#undef COMPLEX
+
+/* machine epsilon for double */
+#undef D_MACHEPS
+
+/* machine epsilon for single */
+#undef F_MACHEPS
+
+/* Define to 1 if you have the `bcopy' function. */
+#undef HAVE_BCOPY
+
+/* Define to 1 if you have the `bzero' function. */
+#undef HAVE_BZERO
+
+/* Define to 1 if you have the <complex.h> header file. */
+#undef HAVE_COMPLEX_H
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the `m' library (-lm). */
+#undef HAVE_LIBM
+
+/* Define to 1 if you have the <malloc.h> header file. */
+#undef HAVE_MALLOC_H
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Function prototypes supported */
+#undef HAVE_PROTOTYPES
+
+/* Function prototypes allowed in structures */
+#undef HAVE_PROTOTYPES_IN_STRUCT
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* unroll low level loops on matrices */
+#undef MUNROLL
+
+/* max integer?? */
+#undef M_MAX_INT
+
+/* Not segemented??? */
+#undef NOT_SEGMENTED
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* double precision */
+#undef REAL_DBL
+
+/* single precision */
+#undef REAL_FLT
+
+/* incorporate sparse functions */
+#undef SPARSE
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* u_int type defined */
+#undef U_INT_DEF
+
+/* varargs.h present */
+#undef VARARGS
+
+/* unroll low level loops on vectors */
+#undef VUNROLL
+
+/* Define to 1 if your processor stores words with the most significant byte
+   first (like Motorola and SPARC, unlike Intel and VAX). */
+#undef WORDS_BIGENDIAN
+
+/* Define to empty if `const' does not conform to ANSI C. */
 #undef const
 
-#undef MALLOCDECL
-#undef NOT_SEGMENTED
-#undef HAVE_MEMORY_H
-#undef HAVE_COMPLEX_H
-#undef HAVE_MALLOC_H
-#undef STDC_HEADERS
-#undef HAVE_BCOPY
-#undef HAVE_BZERO
-#undef CHAR0ISDBL0
-#undef WORDS_BIGENDIAN
-#undef U_INT_DEF
-#undef VARARGS
-#undef HAVE_PROTOTYPES
-#undef HAVE_PROTOTYPES_IN_STRUCT
+/* Define to `unsigned' if <sys/types.h> does not define. */
+#undef size_t
+
 
 /* for inclusion into C++ files */
 #ifdef __cplusplus
