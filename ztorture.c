@@ -87,9 +87,7 @@ PERM	*pi;
 #define	MATLAB_NAME	"alpha"
 char	name[81] = MATLAB_NAME;
 
-void	main(argc, argv)
-int	argc;
-char	*argv[];
+int	main(int argc, char* argv[])
 {
     ZVEC 	*x = ZVNULL, *y = ZVNULL, *z = ZVNULL, *u = ZVNULL;
     ZVEC	*diag = ZVNULL;
@@ -716,5 +714,6 @@ char	*argv[];
     MEMCHK();
     printf("# Finished torture test for complex numbers/vectors/matrices\n");
     mem_info();
+    return 0;
 }
 

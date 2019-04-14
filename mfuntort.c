@@ -39,7 +39,7 @@ static char rcsid[] = "$Id: mfuntort.c,v 1.2 1994/01/14 01:08:06 des Exp $";
 
 #define DIM  10
 
-void main()
+int main()
 {
 
    MAT *A, *B, *C, *OUTA, *OUTB, *TMP;
@@ -177,5 +177,6 @@ void main()
    V_FREE(x);
 
    mem_info();
+   return 0;
 }
 

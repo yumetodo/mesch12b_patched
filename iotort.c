@@ -37,7 +37,7 @@ static char rcsid[] = "$Id: $";
 #define notice(mesg)	printf("# Testing %s...\n",mesg);
 
 
-void main()
+int main()
 {
    VEC *x;
    MAT *A;
@@ -138,4 +138,5 @@ void main()
    fclose(fp);
 
    mem_info();
+   return 0;
 }

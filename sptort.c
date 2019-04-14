@@ -85,9 +85,7 @@ SPMAT	*A;
 }
 
 
-void	main(argc, argv)
-int	argc;
-char	*argv[];
+int	main(int argc, char* argv[])
 {
     VEC		*x, *y, *z, *u, *v;
     Real	s1, s2;
@@ -477,6 +475,7 @@ char	*argv[];
 
     printf("# Done testing (%s)\n",argv[0]);
     mem_info();
+    return 0;
 }
     
 

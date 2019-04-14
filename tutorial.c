@@ -302,7 +302,7 @@ void tut_lap()
 }
 
 
-void main()
+int main()
 {
    int i;
 
@@ -316,6 +316,6 @@ void main()
       printf(" Wrong value of i (only 1, 2 or 3)\n\n");
       break;
    }
-
+   return 0;
 }
 

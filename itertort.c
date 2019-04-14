@@ -152,9 +152,7 @@ VEC	*d, *x, *out;
 
 
 /************************************************/
-void	main(argc, argv)
-int	argc;
-char	*argv[];
+int	main(int argc, char *argv[])
 {
    VEC		*x, *y, *z, *u, *v, *xn, *yn;
    SPMAT	*A = NULL, *B = NULL;
@@ -688,4 +686,5 @@ char	*argv[];
 
    printf("# Done testing (%s)\n",argv[0]);
    mem_info();
+   return 0;
 }

@@ -341,9 +341,7 @@ int par;
 #endif
 
 
-void main(argc, argv)
-int     argc;
-char    *argv[];
+int main(int argc, char* argv[])
 {
    VEC  *x = VNULL, *y = VNULL, *z = VNULL;
    PERM  *pi1 = PNULL, *pi2 = PNULL, *pi3 = PNULL;
@@ -756,5 +754,5 @@ char    *argv[];
    printf("# Finished memory torture test\n");
 
    dmalloc_shutdown();
-   return;
+   return 0;
 }
