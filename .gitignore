@@ -58,3 +58,7 @@ config.log
 config.status
 machine.h
 makefile
+
+*.o
+
+meschach.a
