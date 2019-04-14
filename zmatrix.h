@@ -36,6 +36,7 @@
 
 
 /* complex definition */
+#undef complex
 typedef struct  {
                 Real re,im;
         } complex;
